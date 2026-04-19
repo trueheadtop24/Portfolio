@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reggie True | CS ePortfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent2: #22c55e;
+      --border: #334155;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 20px 40px;
+      text-align: center;
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid var(--border);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: 0 auto 20px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      background: var(--accent);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.2s ease;
+    }
+
+    nav a:hover,
+    .links a:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    section {
+      margin-bottom: 42px;
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 14px;
+      color: white;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .section-text {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      padding: 5px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      margin-right: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .links a {
+      text-decoration: none;
+      color: white;
+      background: var(--accent2);
+      padding: 9px 14px;
+      border-radius: 10px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      padding: 20px 10px 40px;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reggie True</h1>
+    <p>
+      Computer Science ePortfolio featuring technical artifacts, milestone narratives,
+      a professional self-assessment, and a code review video. This portfolio highlights
+      my growth in software design, algorithms and data structures, databases, and secure development.
+    </p>
+    <nav>
+      <a href="#artifacts">Artifacts</a>
+      <a href="#narratives">Narratives</a>
+      <a href="#assessment">Self-Assessment</a>
+      <a href="#video">Code Review</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About This ePortfolio</h2>
+      <p class="section-text">
+        This ePortfolio brings together my major Computer Science work. It includes technical
+        artifacts, milestone narratives, my professional self-assessment, and a code review video.
+        Each item shows how I improved my work and developed stronger technical and professional skills.
+      </p>
+      <div class="links">
+        <a href="https://github.com/trueheadtop24" target="_blank">GitHub Profile</a>
+        <a href="README.md" target="_blank">Portfolio README</a>
+      </div>
+    </section>
+
+    <section id="artifacts">
+      <h2>Technical Artifacts</h2>
+      <p class="section-text">
+        This section includes the artifact files used in my ePortfolio. Some artifacts are stored
+        in GitHub as zip files, and larger files are linked through Google Drive.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="tag">Algorithms & Data Structures</span>
+          <h3>CS 410 Project</h3>
+          <p>
+            This artifact highlights secure coding, vulnerability review, and enhancement work
+            completed for my CS 410 project.
+          </p>
+          <div class="links">
+            <a href="CS%20410%20Project.zip" target="_blank">Open ZIP Artifact</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Databases</span>
+          <h3>Project 2 Dashboard</h3>
+          <p>
+            This artifact includes my database and dashboard work, including the original and enhanced
+            project files packaged together.
+          </p>
+          <div class="links">
+            <a href="Project%202.zip" target="_blank">Open ZIP Artifact</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Software Design & Engineering</span>
+          <h3>Drive Artifact One</h3>
+          <p>
+            Additional technical artifact stored in Google Drive because of file size.
+          </p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1h2XaN-kWNfhIxrSxXWQAXqF5YTmD3iAX/view?usp=drive_link" target="_blank">Open Drive File</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Additional Artifact</span>
+          <h3>Drive Artifact Two</h3>
+          <p>
+            Additional supporting artifact stored in Google Drive for portfolio access.
+          </p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1LAY4CPaLNhm3mO-gFyly3vlKgddpjtLE/view?usp=drive_link" target="_blank">Open Drive File</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="narratives">
+      <h2>Milestone Narratives</h2>
+      <p class="section-text">
+        These documents explain my artifact choices, enhancement process, and how my work aligns
+        with course outcomes.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>CS 499 3-2 Milestone</h3>
+          <p>Initial milestone document covering artifact selection and project direction.</p>
+          <div class="links">
+            <a href="CS%20499%203-2%20Milestone.docx" target="_blank">Open Narrative</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>CS-499 Enhancements</h3>
+          <p>Enhancement planning and description of the improvements made to selected artifacts.</p>
+          <div class="links">
+            <a href="CS-499%20Enhancements.docx" target="_blank">Open Narrative</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Client Server Enhancement</h3>
+          <p>Written explanation of client-server and security-related project improvements.</p>
+          <div class="links">
+            <a href="Client%20Server%20Enhancement.docx" target="_blank">Open Narrative</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="assessment">
+      <h2>Professional Self-Assessment</h2>
+      <p class="section-text">
+        My professional self-assessment explains how the Computer Science program and artifact
+        enhancements helped me grow in software development, secure coding, database work,
+        and technical communication.
+      </p>
+      <div class="links">
+        <a href="#" target="_blank">Add Self-Assessment Link Here</a>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Code Review Video</h2>
+      <p class="section-text">
+        This video reviews my technical artifacts, explains the enhancement process, and shows
+        how the changes improved my projects.
+      </p>
+      <div class="links">
+        <a href="https://youtu.be/Daher7TI69M" target="_blank">Watch Code Review Video</a>
+      </div>
+    </section>
+
+    <section id="highlights">
+      <h2>What This Portfolio Shows</h2>
+      <ul>
+        <li>My ability to improve original work into stronger and more polished technical artifacts</li>
+        <li>My understanding of software design, algorithms, databases, and secure coding practices</li>
+        <li>My growth in writing clearly about technical decisions and enhancements</li>
+        <li>My readiness to present academic work in a professional portfolio format</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="section-text">
+        Email: <a href="mailto:truewebdev@yahoo.com" style="color: var(--accent);">truewebdev@yahoo.com</a><br>
+        GitHub: <a href="https://github.com/trueheadtop24" style="color: var(--accent);" target="_blank">github.com/trueheadtop24</a><br>
+        LinkedIn: <a href="#" style="color: var(--accent);" target="_blank">Add your LinkedIn link</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Reggie True | Computer Science ePortfolio</p>
+  </footer>
+</body>
+</html>
