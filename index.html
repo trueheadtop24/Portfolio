@@ -6,14 +6,14 @@
   <title>Reggie True | CS ePortfolio</title>
   <style>
     :root {
-      --bg: #0f172a;
-      --panel: #111827;
-      --card: #1f2937;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
+      --bg: #052e16;
+      --panel: #064e2a;
+      --card: #14532d;
+      --text: #ecfdf5;
+      --muted: #bbf7d0;
       --accent: #22c55e;
       --accent2: #16a34a;
-      --border: #334155;
+      --border: #15803d;
     }
 
     * {
@@ -24,7 +24,7 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      background: linear-gradient(180deg, #052e16 0%, #064e2a 100%);
       color: var(--text);
       line-height: 1.6;
     }
@@ -32,7 +32,7 @@
     header {
       padding: 60px 20px 40px;
       text-align: center;
-      background: rgba(15, 23, 42, 0.95);
+      background: rgba(5, 46, 22, 0.95);
       border-bottom: 1px solid var(--border);
     }
 
@@ -42,7 +42,7 @@
     }
 
     header p {
-      max-width: 800px;
+      max-width: 850px;
       margin: 0 auto 20px;
       color: var(--muted);
       font-size: 1.05rem;
@@ -56,8 +56,7 @@
       margin-top: 20px;
     }
 
-    nav a,
-    .button {
+    nav a {
       text-decoration: none;
       color: white;
       background: var(--accent);
@@ -69,7 +68,7 @@
     }
 
     nav a:hover,
-    .button:hover {
+    .links a:hover {
       opacity: 0.9;
       transform: translateY(-1px);
     }
@@ -82,7 +81,7 @@
 
     section {
       margin-bottom: 42px;
-      background: rgba(17, 24, 39, 0.9);
+      background: rgba(6, 78, 42, 0.92);
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 28px;
@@ -100,7 +99,6 @@
       color: white;
     }
 
-    .intro-text,
     .section-text {
       color: var(--muted);
       margin-bottom: 16px;
@@ -128,8 +126,8 @@
     .tag {
       display: inline-block;
       font-size: 0.8rem;
-      background: rgba(56, 189, 248, 0.15);
-      color: var(--accent);
+      background: rgba(34, 197, 94, 0.15);
+      color: #86efac;
       padding: 5px 10px;
       border-radius: 999px;
       margin-bottom: 12px;
@@ -159,11 +157,7 @@
       padding: 9px 14px;
       border-radius: 10px;
       font-weight: bold;
-    }
-
-    .placeholder {
-      font-style: italic;
-      color: #cbd5e1;
+      display: inline-block;
     }
 
     footer {
@@ -187,13 +181,13 @@
   <header>
     <h1>Reggie True</h1>
     <p>
-      Computer Science ePortfolio featuring original and enhanced technical artifacts, milestone narratives,
-      a professional self-assessment, and a code review video. This site highlights my growth in software
-      design, algorithms and data structures, databases, and secure development.
+      Computer Science ePortfolio featuring technical artifacts, milestone narratives,
+      and a code review video. This portfolio highlights my growth in software design,
+      algorithms and data structures, databases, and secure development.
     </p>
     <nav>
       <a href="#artifacts">Artifacts</a>
-      <a href="#narratives">Milestone Narratives</a>
+      <a href="#narratives">Narratives</a>
       <a href="#video">Code Review</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -203,53 +197,67 @@
     <section id="about">
       <h2>About This ePortfolio</h2>
       <p class="section-text">
-        This ePortfolio brings together the key work from my Computer Science program. It includes my technical
-        artifacts, written milestone narratives, a professional self-assessment, and a code review video.
-        Each section shows how I improved my work and strengthened my skills across software engineering,
-        algorithms, databases, and professional communication.
+        This ePortfolio brings together my major Computer Science work. It includes
+        technical artifacts, milestone narratives, and a code review video. Each item
+        shows how I improved my work and developed stronger technical and professional skills.
       </p>
       <div class="links">
-        <a href="#" target="_blank">GitHub Pages ePortfolio URL</a>
-        <a href="#" target="_blank">GitHub Profile</a>
-        <a href="#" target="_blank">LinkedIn</a>
+        <a href="https://github.com/trueheadtop24" target="_blank">GitHub Profile</a>
+        <a href="README.md" target="_blank">Portfolio README</a>
       </div>
     </section>
 
     <section id="artifacts">
       <h2>Technical Artifacts</h2>
       <p class="section-text">
-        This section includes the original and enhanced versions of my technical artifact files. These projects
-        show how I applied design, coding, debugging, and improvement strategies to strengthen my work.
+        This section includes the artifact files used in my ePortfolio. Some artifacts are
+        stored in GitHub as zip files, and larger files are linked through Google Drive.
       </p>
 
       <div class="grid">
         <div class="card">
-          <span class="tag">Software Design & Engineering</span>
-          <h3>Artifact One</h3>
-          <p>Add your artifact title and a short description here.</p>
-          <div class="links">
-            <a href="#" target="_blank">Original File</a>
-            <a href="#" target="_blank">Enhanced File</a>
-          </div>
-        </div>
-
-        <div class="card">
           <span class="tag">Algorithms & Data Structures</span>
-          <h3>Artifact Two</h3>
-          <p>Add your artifact title and a short description here.</p>
+          <h3>CS 410 Project</h3>
+          <p>
+            This artifact highlights secure coding, vulnerability review, and enhancement work
+            completed for my CS 410 project.
+          </p>
           <div class="links">
-            <a href="#" target="_blank">Original File</a>
-            <a href="#" target="_blank">Enhanced File</a>
+            <a href="CS%20410%20Project.zip" target="_blank">Open ZIP Artifact</a>
           </div>
         </div>
 
         <div class="card">
           <span class="tag">Databases</span>
-          <h3>Artifact Three</h3>
-          <p>Add your artifact title and a short description here.</p>
+          <h3>Project 2 Dashboard</h3>
+          <p>
+            This artifact includes my database and dashboard work, including the original and
+            enhanced project files packaged together.
+          </p>
           <div class="links">
-            <a href="#" target="_blank">Original File</a>
-            <a href="#" target="_blank">Enhanced File</a>
+            <a href="Project%202.zip" target="_blank">Open ZIP Artifact</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Software Design & Engineering</span>
+          <h3>Drive Artifact One</h3>
+          <p>
+            Additional technical artifact stored in Google Drive because of file size.
+          </p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1h2XaN-kWNfhIxrSxXWQAXqF5YTmD3iAX/view?usp=drive_link" target="_blank">Open Drive File</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag">Additional Artifact</span>
+          <h3>Drive Artifact Two</h3>
+          <p>
+            Additional supporting artifact stored in Google Drive for portfolio access.
+          </p>
+          <div class="links">
+            <a href="https://drive.google.com/file/d/1LAY4CPaLNhm3mO-gFyly3vlKgddpjtLE/view?usp=drive_link" target="_blank">Open Drive File</a>
           </div>
         </div>
       </div>
@@ -258,36 +266,32 @@
     <section id="narratives">
       <h2>Milestone Narratives</h2>
       <p class="section-text">
-        These Word documents explain my enhancement process, project decisions, and the ways each artifact aligns
-        with the course outcomes.
+        These documents explain my artifact choices, enhancement process, and how my work aligns
+        with course outcomes.
       </p>
+
       <div class="grid">
         <div class="card">
-          <h3>Milestone One Narrative</h3>
-          <p class="placeholder">Link your Word document here.</p>
+          <h3>CS 499 3-2 Milestone</h3>
+          <p>Initial milestone document covering artifact selection and project direction.</p>
           <div class="links">
-            <a href="#" target="_blank">Open Document</a>
+            <a href="CS%20499%203-2%20Milestone.docx" target="_blank">Open Narrative</a>
           </div>
         </div>
+
         <div class="card">
-          <h3>Milestone Two Narrative</h3>
-          <p class="placeholder">Link your Word document here.</p>
+          <h3>CS-499 Enhancements</h3>
+          <p>Enhancement planning and description of the improvements made to selected artifacts.</p>
           <div class="links">
-            <a href="#" target="_blank">Open Document</a>
+            <a href="CS-499%20Enhancements.docx" target="_blank">Open Narrative</a>
           </div>
         </div>
+
         <div class="card">
-          <h3>Milestone Three Narrative</h3>
-          <p class="placeholder">Link your Word document here.</p>
+          <h3>Client Server Enhancement</h3>
+          <p>Written explanation of client-server and security-related project improvements.</p>
           <div class="links">
-            <a href="#" target="_blank">Open Document</a>
-          </div>
-        </div>
-        <div class="card">
-          <h3>Milestone Four Narrative</h3>
-          <p class="placeholder">Link your Word document here.</p>
-          <div class="links">
-            <a href="#" target="_blank">Open Document</a>
+            <a href="Client%20Server%20Enhancement.docx" target="_blank">Open Narrative</a>
           </div>
         </div>
       </div>
@@ -296,8 +300,8 @@
     <section id="video">
       <h2>Code Review Video</h2>
       <p class="section-text">
-        This video reviews my technical artifacts, explains the enhancement process, and shows how the changes
-        improved the projects.
+        This video reviews my technical artifacts, explains the enhancement process, and shows
+        how the changes improved my projects.
       </p>
       <div class="links">
         <a href="https://youtu.be/Daher7TI69M" target="_blank">Watch Code Review Video</a>
@@ -307,19 +311,19 @@
     <section id="highlights">
       <h2>What This Portfolio Shows</h2>
       <ul>
-        <li>My ability to improve original code into stronger, cleaner, and more professional work</li>
+        <li>My ability to improve original work into stronger and more polished technical artifacts</li>
         <li>My understanding of software design, algorithms, databases, and secure coding practices</li>
-        <li>My growth in writing technical narratives and explaining my work clearly</li>
-        <li>My readiness to present technical work in a professional portfolio format</li>
+        <li>My growth in writing clearly about technical decisions and enhancements</li>
+        <li>My readiness to present academic work in a professional portfolio format</li>
       </ul>
     </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p class="section-text">
-        Email: <a href="mailto:truewebdev@yahoo.com" style="color: var(--accent);">truewebdev@yahoo.com</a><br>
-        GitHub: <a href="#" style="color: var(--accent);">Add your GitHub link</a><br>
-        LinkedIn: <a href="#" style="color: var(--accent);">Add your LinkedIn link</a>
+        Email: <a href="mailto:truewebdev@yahoo.com" style="color: #86efac;">truewebdev@yahoo.com</a><br>
+        GitHub: <a href="https://github.com/trueheadtop24" style="color: #86efac;" target="_blank">github.com/trueheadtop24</a><br>
+        LinkedIn: <a href="#" style="color: #86efac;" target="_blank">Add your LinkedIn link</a>
       </p>
     </section>
   </main>
